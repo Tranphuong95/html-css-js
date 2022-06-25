@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>
+                Tieu de 1
+                <span class="tooltip">Tooltip1</span>
+              </th>
+              <th>
+                Tieu de 2
+                <span class="tooltip">Tooltip2</span>
+              </th>
+              <th>
+                Tieu de 3
+                <span class="tooltip">Tooltip3</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr aria-level="1">
+                    <td>
+                        <div class="treelist-icon-container">
+                            <div class="more"></div>
+                        </div>
+                    </td>
+                    
+                </tr>
+                <tr aria-level="2">
+                    <td>
+                        <div class="treelist-icon-container">
+                            <div class="emty"></div>
+                            <div class="more"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr aria-level="3">
+                    <td>
+                        <div class="treelist-icon-container">
+                            <div class="emty"></div>
+                            <div class="emty"></div>
+                            <div class="more"></div>
+                        </div>
+                    </td>
+                </tr> -->
+          </tbody>
+        </table>
+      </div>
+      <div class="context-menu-wrapper">
+        <div class="context-menu">
+            <ul class="">
+                <li><i class="contex-menu-add context-menu-icon"></i><span>Add</span><span class="span-more"><div class="more"></div></span>
+                    <div class="submenu">
+                        <ul class="">
+                            <li><i class="context-menu-add-newtask context-menu-icon"></i><span>New Task</span></li>
+                            <li><i class="context-menu-add-subtask context-menu-icon"></i><span>New SubTask</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li  onclick="handleDetail(event, this)"><i class="context-menu-detail context-menu-icon"></i></i><span>Task detail</span></li>
+                <li><i class="context-menu-delete context-menu-icon"></i><span>Delete Task</span></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="formdetail-wrapper">
+        <div class="form-container">
+            <div class="title">
+                <span data-type-form="add">Them moi du lieu</span>
+                <span onclick="handleClickForm(event,this)"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <!-- <span style="color: red; cursor: pointer">Close</span> -->
+            <div class="form-detail">
+                <form >
+                    <div class="group">
+                      <label>Id</label>
+                      <input type="number" name="id" oninput="handleChange(this)"/>
+                    </div>
+                    <div class="group">
+                      <label>Name</label>
+                      <input type="text" name="name" oninput="handleChange(this)"/>
+                    </div>
+                    <div class="group">
+                      <label>Description</label>
+                      <input type="text" name="des" oninput="handleChange(this)"/>
+                    </div>
+                    <div class="group">
+                      <label>ParentId</label>
+                      <input type="number" name="parentId" oninput="handleChange(this)"/>
+                    </div>
+                    <button class="btn-add-form btn-form" type="button" onclick="handleAddData()">Add</button>
+                  </form>
+            </div>
+            
+      </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
 
