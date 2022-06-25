@@ -1,0 +1,101 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Banh keo",
+      "des": "Banh keo chua duong va tinh bot va ca phu pham khac",
+      "parentId": 0
+    },
+    {
+      "id": 2,
+      "name": "keo",
+      "des": "keo chu yeu chua duong",
+      "parentId": 1
+    },
+    {
+      "id": 3,
+      "name": "Banh",
+      "des": "Banh chua tinh bot, duong, trung, sua ... ",
+      "parentId": 1
+    },
+    {
+      "id": 4,
+      "name": "Banh chuoi",
+      "des": "Banh chuoi duoc lam tu chuoi ",
+      "parentId": 3
+    },
+    {
+      "id": 5,
+      "name": "keo Hai Ha",
+      "des": "keo do cong ty Hai ha san xuat",
+      "parentId": 2
+    },
+    {
+      "id": 6,
+      "name": "Keo sua Hai Ha",
+      "des": "Keo sua do cong ty Hai Ha san xuat",
+      "parentId": 5
+    },
+    {
+      "id": 7,
+      "name": "Keo hoa qua Hai Ha",
+      "des": "keo hoa qua Hai Ha",
+      "parentId": 5
+    },
+    {
+      "id": 8,
+      "name": "Keo Kinh Do ",
+      "des": "keo do cong ty Kinh DO san xuat",
+      "parentId": 2
+    },
+    {
+      "id": 9,
+      "name": "Keo thach kinh Do ",
+      "des": "keo thach do cong ty Kinh Do san xuat",
+      "parentId": 8
+    },
+    {
+      "id": 10,
+      "name": "Banh Kinh Do",
+      "des": "Banh do cong ty Kinh Do san xuat",
+      "parentId": 3
+    },
+    {
+      "id": 11,
+      "name": "Banh kem Kinh Do",
+      "des": "Banh kem do cong ty Kinh Do san xuat",
+      "parentId": 10
+    },
+    {
+      "id": 12,
+      "name": "quan ao",
+      "des": "trang phuc de mac",
+      "parentId": 0
+    }, 
+    {
+      "id": 13,
+      "name": "quan",
+      "des": "mac phan tha duoi",
+      "parentId": 12
+    },
+    {
+      "id": 14,
+      "name": "ao",
+      "des": "mac phan than tren",
+      "parentId": 12
+    }, 
+    {
+      "id": 15,
+      "name": "quan bo",
+      "des": "quan duoc lam tu vai bo",
+      "parentId": 13
+    },
+    {
+      "id": 16,
+      "name": "ao so mi",
+      "des": "ao dai tay",
+      "parentId": 14
+    }
+    
+  ]
+}
